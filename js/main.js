@@ -25,9 +25,6 @@ function changeBGImage() {
 
 	// bug fix #2 should go here. it's at most 3 lines of JS code.
 	puzzlePieces.forEach(piece => {
-		// it settles the position of puzzle pieces
-          piece.style.left = '0';   
-          piece.style.top = '0';
           document.querySelector('.puzzle-pieces').appendChild(piece);
       });
     puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
